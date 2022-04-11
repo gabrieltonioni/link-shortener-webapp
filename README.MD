@@ -18,7 +18,7 @@ O sistema busca ser uma utilidade para o compartilhamento de links, com a possib
 - Dashboard que mostra a quantidade de acessos a cada link
 - Dashboard que mostra a quantidade de dinhiero ganho com anúncios
 - Habilitar e desabilitar anúncios em links
-- Limpar do banco de dados links expirados e/ou que estão há muito tempo sem utilização
+- Limpar do banco de dados de links expirados e/ou que estão há muito tempo sem utilização
 
 ## Tecnologias
 Para o frontend, pretende-se implementar em HTML, CSS e Javascript, com o auxílio da framework Bootstrap.
