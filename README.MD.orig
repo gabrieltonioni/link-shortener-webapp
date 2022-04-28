@@ -63,11 +63,6 @@ Muitos encurtadores de link já existem, o desafio é testar se ainda existe esp
 - Modificar o endpoint para contabilizar a quantidade de vezes que o link foi acessado (Jefferson)
 - Modificar a tabela de links e incluir a quantidade de acessos (Jefferson)
 
-### Como usuário, eu gostaria de visualizar o lucro dos meus links:
-- Adicionar seção no front que exibe as estatísticas monetárias de cada link (Lucas)
-- Modificar o endpoint para contabilizar a quantidade de anúncios visualizados por link (Jefferson)
-- Criar tabela de totais ganhos por usuário (Jefferson)
-
 ## Link da apresentação da Sprint 1
 https://docs.google.com/presentation/d/1V2ia4AIlxXt_MFI_Q-XNMblruwRI5C5fUasAyyGHF7c/edit#slide=id.g125f3f7a426_0_84
 
