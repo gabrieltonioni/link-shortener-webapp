@@ -1,0 +1,73 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/*  SIDEBAR */
+
+#sidebar {
+    background: white;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+
+#sidebar a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: white;
+    background: #0d6efd;
+    font-style: italic;
+}
+
+#sidebar ul{
+    margin-right: 10px;
+}
+
+
+#sidebar-ftr ul li a{
+    font-size: 0.9em;
+}
+
+/* CONTENT */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#content input{
+    border-color: black;
+}
+
+#content input:focus{
+    border-color: #0d6efd;
+}
+
+#fieldSenha input{
+    border-width: 0.1em;
+}
+
+/* MEDIAQUERIES */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
