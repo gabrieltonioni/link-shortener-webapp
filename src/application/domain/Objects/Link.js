@@ -1,12 +1,11 @@
-export default function buildMakeLink ({Id, url, urlShortener, makeLinkStats, makeLinkConfig}) {
-    
+export default function buildMakeLink ({Id, validateUrl, urlShortener, makeLinkStats, makeLinkConfig}) {
+
     return function makeLink ({
         id = Id.makeId(),
         originalUrl,
         author,
         createdOn = Date.now(),
         modifiedOn = Date.now(),
-        config
     } = {}) {
         
         if (!Id.isValid(id)) {
@@ -15,7 +14,7 @@ export default function buildMakeLink ({Id, url, urlShortener, makeLinkStats, ma
         if (!originalUrl) {
             throw new Error('Link must be provided with a url')
         }
-        if (!url.isValid(originalUrl)) {
+        if (!validateUrl(originalUrl)) {
             throw new Error('Url to be shortened must be a valid url.')
         }
         if (!author) {
@@ -27,12 +26,7 @@ export default function buildMakeLink ({Id, url, urlShortener, makeLinkStats, ma
 
         const shortenedUrl = urlShortener(originalUrl)
         const stats = makeLinkStats()
-        if (!config) {
-            const config = makeLinkConfig()
-        }
-        else {
-            const config = makeLinkConfig(config)
-        }
+        const config = makeLinkConfig()
 
         return Object.freeze({
             getId: () => id,
